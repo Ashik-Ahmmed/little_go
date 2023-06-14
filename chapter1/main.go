@@ -1,11 +1,7 @@
 package main
 
-import "os"
-
 func main() {
-	if len(os.Args) != 2 {
-		os.Exit(1)
-	}
-
-	println("It is over", os.Args[1])
+	var power int
+	power = 9000
+	println("It is over", power)
 }
