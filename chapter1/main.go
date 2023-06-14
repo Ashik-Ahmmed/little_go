@@ -1,5 +1,11 @@
 package main
 
+import "os"
+
 func main() {
-	println("It is over 900!")
+	if len(os.Args) != 2 {
+		os.Exit(1)
+	}
+
+	println("It is over", os.Args[1])
 }
